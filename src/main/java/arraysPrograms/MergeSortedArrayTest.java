@@ -29,6 +29,14 @@ public class MergeSortedArrayTest {
         mergeSortedArray(num1,m,num2,n);
     }
 
+    @Test
+    public void test4(){
+        int[] num1 = {2,0};
+        int[] num2 = {};
+        int m=1,n=0;
+        mergeSortedArray(num1,m,num2,n);
+    }
+
     private void mergeSortedArray(int[] num1, int m, int[] num2, int n) {
         int index=0,i=0,j=0;
         int[] temp;
@@ -48,5 +56,4 @@ public class MergeSortedArrayTest {
         }
         System.out.println(Arrays.toString(num1));
     }
-
 }
