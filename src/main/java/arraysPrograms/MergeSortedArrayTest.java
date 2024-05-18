@@ -44,7 +44,7 @@ public class MergeSortedArrayTest {
         }
 
         while(i<m){
-            num1[index++]=temp[i++];;
+            num1[index++]=temp[i++];
         }
         System.out.println(Arrays.toString(num1));
     }

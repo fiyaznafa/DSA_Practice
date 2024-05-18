@@ -6,7 +6,7 @@ import org.testng.annotations.Test;
 /*
 27. https://leetcode.com/problems/remove-element
  */
-public class RemoveElement {
+public class RemoveElementTest {
     @Test
     public void test1(){
       int[] nums = {3,2,2,3};
@@ -24,7 +24,7 @@ public class RemoveElement {
     }
 
     private int removeElement(int[] nums, int val) {
-        int left=0,right=nums.length-1,temp=0;
+        int left=0,right=nums.length-1,temp;
         while (left<=right){
             if(nums[left]==val&&nums[right]!=val){
                 temp=nums[left];
